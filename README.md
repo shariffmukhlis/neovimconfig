@@ -1,6 +1,8 @@
-
 # My Neovim Configuration
 This is my personal Neovim configuration, which I use for development work on a daily basis. The configuration is designed to be modular and extendable, and includes support for a variety of plugins and features to enhance productivity.
+
+## Interfaces
+<img width="412" alt="My Config File" src="./src/interface.png">
 
 ## Features
 - Tree-sitter: Provides advanced syntax highlighting and parsing for a variety of programming languages.

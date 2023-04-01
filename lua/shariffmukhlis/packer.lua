@@ -55,8 +55,12 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  -- install without yarn or npm
-use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+  use {
+  'iamcco/markdown-preview.nvim',
+  ft = 'markdown',
+  run = 'cd app && yarn install'
+}
 
   use('kylechui/nvim-surround')
   use('numToStr/Comment.nvim')
@@ -68,7 +72,6 @@ use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = fun
   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 
 }
-use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
 
 
   end)
